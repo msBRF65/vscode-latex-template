@@ -7,7 +7,9 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - "..:/workdir"
+      - ..:/workdir
+      - ~/.ssh:/root/.ssh
     entrypoint: bash
     tty: true
     working_dir: /workdir
+    command: exec /bin/bash
