@@ -1,0 +1,7 @@
+{
+  "name": "texlive-ja",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "texlive",
+  "workspaceFolder": "/workdir",
+  "overrideCommand": true
+}

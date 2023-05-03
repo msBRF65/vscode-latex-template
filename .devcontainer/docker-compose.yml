@@ -1,0 +1,13 @@
+version: "3"
+services:
+  texlive: 
+    build:
+      args:
+        - BASE_IMAGE=paperist/texlive-ja:latest
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "..:/workdir"
+    entrypoint: bash
+    tty: true
+    working_dir: /workdir
