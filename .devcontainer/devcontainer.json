@@ -3,5 +3,12 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "texlive",
   "workspaceFolder": "/workdir",
-  "overrideCommand": true
+	"overrideCommand": true,
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"James-Yu.latex-workshop"
+			]
+		}
+	}
 }
