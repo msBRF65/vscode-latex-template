@@ -6,7 +6,7 @@
 FROM paperist/texlive-ja:latest
 
 RUN apt-get update && apt-get install -y git
-RUN tlmgr install newtx
+RUN tlmgr install newtx siunitx
 
 WORKDIR /workdir
 COPY .latexmkrc /root
